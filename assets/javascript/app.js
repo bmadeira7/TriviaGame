@@ -55,7 +55,8 @@ function start() {
     INTERVAL = setInterval(timeDown, 1000)
     correctResults = $("#results").text("Correct Answers: " + correctlyAnswered)
     incorrectResults = $("#wrongs").text("Incorrect Answers: " + incorrectlyAnswered)
-    
+    $("#submit").removeClass("disabled");
+  
 }
 
 
@@ -104,9 +105,8 @@ $("#startButton").click(function () {
 
 
 $("#submit").click(function () {
-    $("#submit").on('click',function() {
-        $(this).prop("disabled",true);
-    });
+        $(this).prop("disabled", true);
+    
     
     var answer1 = $("#form1 input[type='radio']:checked").val()
     var answer2 = $("#form2 input[type='radio']:checked").val()

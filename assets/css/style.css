@@ -1,0 +1,29 @@
+body {
+    background-image: url("https://i1.wp.com/www.orangehead.net/wp-content/uploads/2017/11/pexels-photo-164733s.jpg?fit=1920%2C1278");
+  color: rgb(43, 49, 46);
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.541);
+    width: 80%;
+   
+    
+}
+
+.questions {
+    font-size: 30px;
+    
+}
+
+h1 {
+    font-size: 56px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+#submit {
+    background-color: red;
+    color: white;
+}

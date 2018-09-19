@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>Music Trivia Game</h1>
+
+                <button id="startButton">Display Questions & Start Timer</button>
+                <h4>You have <strong><span id="timerSpan">45</span></strong> seconds to try to answer eight questions
+                    correctly</h4>
+            </div>
+        </div>
+
+
+        <br>
+
+        <div class="row">
+            <div class="questionOne questions">
+
+            </div>
+        </div>
+        <form id="form1">
+            <input type="radio" name="gender" value="wrong"> Jimi Hendrix |
+            <input type="radio" name="gender" value="wrong"> Chuck Berry |
+            <input type="radio" name="gender" value="Les Paul"> Les Paul |
+            <input type="radio" name="gender" value="wrong"> Glenn Danzig
+        </form>
+        <hr>
+
+        <div class="row">
+            <div class="questionTwo questions">
+
+            </div>
+        </div>
+        <form id="form2">
+            <input type="radio" name="gender" value="Theremin"> Theremin |
+            <input type="radio" name="gender" value="wrong"> Piano |
+            <input type="radio" name="gender" value="wrong"> Midi Guitar |
+            <input type="radio" name="gender" value="wrong"> Drum Machine
+        </form>
+        <hr>
+
+        <div class="row">
+            <div class="questionThree questions">
+
+            </div>
+        </div>
+        <form id="form3">
+            <input type="radio" name="gender" value="wrong"> 90 |
+            <input type="radio" name="gender" value="wrong"> 38 |
+            <input type="radio" name="gender" value="wrong"> 78 |
+            <input type="radio" name="gender" value="88"> 88
+        </form>
+        <hr>
+
+
+        <div class="row">
+            <div class="questionFour questions">
+
+            </div>
+        </div>
+        <form id="form4">
+            <input type="radio" name="gender" value="wrong"> Purple Rain |
+            <input type="radio" name="gender" value="When Doves Cry"> When Doves Cry |
+            <input type="radio" name="gender" value="wrong"> I Would Die 4 U |
+            <input type="radio" name="gender" value="wrong"> Raspberry Beret
+        </form>
+        <hr>
+
+
+        <div class="row">
+            <div class="questionFive questions">
+
+            </div>
+        </div>
+        <form id="form5">
+            <input type="radio" name="gender" value="wrong"> John Lennon |
+            <input type="radio" name="gender" value="wrong"> Kurt Cobain |
+            <input type="radio" name="gender" value="wrong"> Tupac |
+            <input type="radio" name="gender" value="Marvin Gaye"> Marvin Gaye
+            <hr>
+        </form>
+        <div class="row">
+            <div class="questionSix questions">
+
+            </div>
+        </div>
+        <form id="form6">
+            <input type="radio" name="gender" value="Elton John"> Elton John |
+            <input type="radio" name="gender" value="wrong"> Paul McCartney |
+            <input type="radio" name="gender" value="wrong"> John Lennon |
+            <input type="radio" name="gender" value="wrong"> Gucci Mane
+        </form>
+        <hr>
+
+        <div class="row">
+            <div class="questionSeven questions">
+
+            </div>
+        </div>
+        <form id="form7">
+            <input type="radio" name="gender" value="wrong"> Six |
+            <input type="radio" name="gender" value="Three"> Three |
+            <input type="radio" name="gender" value="wrong"> Twelve |
+            <input type="radio" name="gender" value="wrong"> Four
+        </form>
+        <hr>
+
+        <div class="row">
+            <div class="questionEight questions">
+
+            </div>
+        </div>
+        <form id="form8">
+            <input type="radio" name="gender" value="wrong"> You Better Run |
+            <input type="radio" name="gender" value="wrong"> In The Air Tonight |
+            <input type="radio" name="gender" value="Video Killed The Radio Star">Video Killed The Radio Star |
+            <input type="radio" name="gender" value="other"> Oliver's Army
+        </form>
+
+
+
+        <br>
+        <button id="submit">*Submit Answers</button>
+
+        <div class="card" style="width: 18rem;">
+                <ul class="list-group list-group-flush">
+                  <li id="results"></li>
+                  <li id="wrongs"></li>
+                  
+                </ul>
+              </div>
+        <div id="results"></div>
+        <hr>
+        <div id="wrongs"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>

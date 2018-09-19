@@ -40,6 +40,7 @@ var answersArray7 = ["Six", "Three", "Twelve", "Four"]
 var answersArray8 = ["You Better Run", "In The Air Tonight", "Video Killed The Radio Star", "Oliver's Army"]
 
 // i wish i knew how to do all this using for loops, it would save time 
+var INTERVAL 
 
 function start() {
     firstQuestion = $(".questionOne").text(questionsArray[0])
@@ -51,9 +52,10 @@ function start() {
     seventhQuestion = $(".questionSeven").text(questionsArray[6])
     eighthQuestion = $(".questionEight").text(questionsArray[7])
     $("#timerSpan").text(timeRemaining)
-    var INTERVAL = setInterval(timeDown, 1000)
+    INTERVAL = setInterval(timeDown, 1000)
     correctResults = $("#results").text("Correct Answers: " + correctlyAnswered)
     incorrectResults = $("#wrongs").text("Incorrect Answers: " + incorrectlyAnswered)
+    
 }
 
 
@@ -62,7 +64,7 @@ function timeDown() {
     $("#timerSpan").text(timeRemaining);
     if (timeRemaining === 0) {
         alert("OUT OF TIME!!!");
-        
+        timeRemaining = 45;
       clearInterval(INTERVAL)
     }
 }
@@ -102,6 +104,10 @@ $("#startButton").click(function () {
 
 
 $("#submit").click(function () {
+    $("#submit").on('click',function() {
+        $(this).prop("disabled",true);
+    });
+    
     var answer1 = $("#form1 input[type='radio']:checked").val()
     var answer2 = $("#form2 input[type='radio']:checked").val()
     var answer3 = $("#form3 input[type='radio']:checked").val()
@@ -110,6 +116,7 @@ $("#submit").click(function () {
     var answer6 = $("#form6 input[type='radio']:checked").val()
     var answer7 = $("#form7 input[type='radio']:checked").val()
     var answer8 = $("#form8 input[type='radio']:checked").val()
+
 
     if (correctAnswer1 === answer1) {
 
